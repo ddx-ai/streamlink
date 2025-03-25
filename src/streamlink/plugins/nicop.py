@@ -168,21 +168,21 @@ class NicoLiveHLSStream(HLSStream):
 @pluginargument(
     "email",
     sensitive=True,
-    argument_name="niconico-email",
+    argument_name="niconicop-email",
     metavar="EMAIL",
     help="The email or phone number associated with your Niconico account",
 )
 @pluginargument(
     "password",
     sensitive=True,
-    argument_name="niconico-password",
+    argument_name="niconicop-password",
     metavar="PASSWORD",
     help="The password of your Niconico account",
 )
 @pluginargument(
     "user-session",
     sensitive=True,
-    argument_name="niconico-user-session",
+    argument_name="niconicop-user-session",
     metavar="VALUE",
     help="""
         Value of the user-session token.
@@ -192,7 +192,7 @@ class NicoLiveHLSStream(HLSStream):
 )
 @pluginargument(
     "purge-credentials",
-    argument_name="niconico-purge-credentials",
+    argument_name="niconicop-purge-credentials",
     action="store_true",
     help="Purge cached Niconico credentials to initiate a new session and reauthenticate.",
 )
